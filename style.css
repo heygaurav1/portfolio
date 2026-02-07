@@ -1,0 +1,237 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  background-color: transparent;
+  color: #ecf0f1;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.light-mode {
+  background-color: transparent;
+  color: #444444;
+}
+
+.dark-mode {
+  background-color: transparent;
+  color: #ecf0f1;
+}
+
+.parent-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.719);
+width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      position: relative;
+     
+
+}
+
+.container {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 15px 0;
+  box-shadow: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-container {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      position: relative;
+
+}
+
+nav {
+  background-color:  rgba(255, 255, 255, 0);
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  backdrop-filter: blur(6px);
+  position: relative;
+    z-index: 1;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 15px;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffd900;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 20px;
+  color: whitesmoke;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: rgb(255, 196, 0);
+}
+
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle button {
+  background-color: transparent;
+  color: inherit;
+  font-size: 25px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+main section {
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center; /* Ensure alignment */
+  flex-direction: column; /* Stack items vertically */
+  width: 100%; /* Take all available space */
+}
+
+.second-container {
+  width: fit-content; /* Take only space needed */
+}
+.container {
+      margin: 0; /* Keep margin at 0 */
+}
+
+.main-content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.main-content-table {
+  border: 1px solid #dddddd59;
+  border-radius: 10px;
+}
+
+.table-row {
+  display: flex;
+  align-items: center;
+}
+
+.table-cell {
+  padding: 80px;
+  text-align: left;
+}
+.table-cell h1{
+  font-size: 2em; /* Adjust h1 font size*/
+  }
+  
+.snoop-img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.main-action-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+#snowfall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.snow {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  border-radius: 0%;
+  pointer-events: none;
+  opacity: 0.9;
+  animation: snowfall 4s linear infinite;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table-cell {
+      padding: 15px; /* Smaller padding on smaller screens*/
+  }
+.table-cell h1{
+   font-size: 1.5em; /* Smaller heading on smaller screens*/
+}
+}
+
+@media screen and (max-width: 480px) {
+ .table-cell {
+      padding: 10px; /* Even smaller padding on very small screens*/
+  }
+.table-cell h1{
+   font-size: 1.2em; /* Even smaller heading on very small screens*/
+}
+}

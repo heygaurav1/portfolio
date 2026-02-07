@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourav Paul - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #2563eb;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+
+        .experience-item,
+        .education-item,
+        .project-item {
+            margin-bottom: 25px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .item-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .item-subtitle {
+            font-size: 16px;
+            color: #555;
+            font-style: italic;
+        }
+
+        .item-date {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .item-description {
+            color: #444;
+            margin-top: 8px;
+        }
+
+        .item-description ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .item-description li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #2563eb;
+        }
+
+        .skill-category h3 {
+            font-size: 16px;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .skill-category p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gourav Paul</h1>
+            <div class="subtitle">Pursuing Bachelor of Data Science & AI/ML</div>
+            <div class="contact">
+                <span>📧 <a href="mailto:gouravkumarpaul1@gmail.com">gouravkumarpaul1@gmail.com</a></span>
+                <span>📞 +91-8100442091</span>
+                <span>🔗 <a href="https://github.com/heygaurav1" target="_blank">github.com/heygaurav1</a></span>
+                <span>💼 <a href="https://linkedin.com/in/gouravpaul"
+                        target="_blank">linkedin.com/in/gouravpaul</a></span>
+                <span>📍 India</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Techno India University</div>
+                        <div class="item-subtitle">Bachelor of data science and AI/ML</div>
+                    </div>
+                    <div class="item-date">2024 - 2028</div>
+                </div>
+                <div class="item-description">
+                    Saltlake, Kolkata
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <p>SQL (CTEs, Joins, Window Functions), Python (Pandas, NumPy), Excel (Pivot Tables, Lookups)</p>
+                </div>
+                <div class="skill-category">
+                    <h3>BI & Visualization</h3>
+                    <p>Power BI (DAX, Data Modeling, KPI Dashboards)</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & Data Platforms</h3>
+                    <p>Google BigQuery (GCP), Google Cloud Storage</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Operations</h3>
+                    <p>ETL pipelines, data cleaning, validation, reconciliation, quality checks, reporting</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Version Control</h3>
+                    <p>Git, GitHub</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">Lumine — iOS Wallpaper App | Swift, SwiftUI, Firebase</div>
+                    <div class="item-date">2024</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Developed a premium iOS application for high-quality background discovery and management.
+                        </li>
+                        <li>Implemented dynamic wallpaper loading, user authentication, and seamless UX transitions.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">Reservation System Backend | Spring Boot, Java, MySQL</div>
+                    <div class="item-date">2024</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Architected a scalable backend for a reservation platform handling real-time bookings.</li>
+                        <li>Implemented secure transaction processing and efficient seat/availability management logic.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">Transaction Analytics Dashboard | SQL, Python, Excel, Power BI</div>
+                    <div class="item-date">2024</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Built a comprehensive multi-country APAC merchant transaction dataset using SQL, Python,
+                            Excel.</li>
+                        <li>Performed detailed analysis of transaction patterns, churn, conversion, and ARPU.</li>
+                        <li>Designed interactive Power BI dashboards highlighting regional insights and cohort trends.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">Uber Ride Analysis | SQL, Pandas, Power BI</div>
+                    <div class="item-date">2024</div>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Formulated a data-driven approach to analyze ride cancellations and driver availability
+                            inefficiencies.</li>
+                        <li>Interpreted results to quantify unmet demand and estimated 1M potential revenue leakage.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <div class="item-description">
+                <ul>
+                    <li>Deloitte Data Analytics Job Simulation — Forage (2025)</li>
+                    <li>Data Analyst 101 — Microsoft (2025)</li>
+                    <li>Power BI Data Modelling Basics Tutorial — Microsoft (2025)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
