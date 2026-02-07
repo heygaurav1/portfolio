@@ -92,7 +92,7 @@ const Footer = () => {
             { name: 'Codeforces', href: 'https://codeforces.com/profile/heygaurav1', external: true },
         ],
         connect: [
-            { name: 'LinkedIn', href: 'https://linkedin.com/in/gouravpaul', external: true },
+            { name: 'LinkedIn', href: 'https://www.linkedin.com/in/gaurav-paul-678586246/', external: true },
             { name: 'Twitter', href: 'https://x.com/heygauravOne', external: true },
             { name: 'YouTube', href: 'https://youtube.com/@heygaurav1', external: true },
             { name: 'Email', href: `mailto:${personalInfo.email} `, external: true },
